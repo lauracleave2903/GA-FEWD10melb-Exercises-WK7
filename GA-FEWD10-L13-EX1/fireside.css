@@ -1,0 +1,294 @@
+@import url('https://cdn.jsdelivr.net/font-zero-width/latest/zero-width.css');
+
+/* https://github.com/patrickkunka/zero-width */
+
+@font-face {
+    font-family: 'Museo300Regular';
+    src: url('fonts/Museo300-Regular-webfont.eot');
+    src: url('fonts/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/Museo300-Regular-webfont.woff') format('woff'), url('fonts/Museo300-Regular-webfont.ttf') format('truetype'), url('fonts/Museo300-Regular-webfont.svg#Museo300Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo500Regular';
+    src: url('fonts/Museo500-Regular-webfont.eot');
+    src: url('fonts/Museo500-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/Museo500-Regular-webfont.woff') format('woff'), url('fonts/Museo500-Regular-webfont.ttf') format('truetype'), url('fonts/Museo500-Regular-webfont.svg#Museo500Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* base */
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+header {
+    background: #9c005d;
+    padding: 50px 0;
+}
+
+.main-heading {
+    padding: 1em 0;
+    background: #ccc;
+}
+
+.home .main-heading {
+    /*display: none;*/
+}
+
+
+/* typography */
+
+body {
+    font-family: 'Museo300Regular', serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 1em;
+    font-weight: 300;
+    /* needed here because default is bold */
+    margin: 0;
+    color: #555;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+p {}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+/* components */
+
+
+/* package summary */
+
+.package {
+    border: 2px solid #eb1d5d;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+.package h3 {
+    font-weight: 500;
+    font-size: 1.875em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0.5em 0;
+    color: white;
+    background: #eb1d5d;
+}
+
+.package .description {
+    padding: 20px;
+}
+
+.package p,
+.package li {
+    font-size: 1.125em;
+}
+
+.package li {
+    line-height: 1.4;
+}
+
+
+/* testimonial */
+
+.testimonial {
+    padding: 2em 0;
+    box-shadow: inset 0 16px 16px -16px #ccc, inset 0 -16px 16px -16px #ccc;
+}
+
+.testimonial img {
+    border-radius: 50%;
+}
+
+.testimonial blockquote {
+    margin: 0;
+}
+
+.testimonial blockquote p {
+    font-size: 1.875em;
+}
+
+.testimonial blockquote cite:before {
+    content: "\2013 ";
+    /* endash */
+}
+
+
+/* product-highlight */
+
+.product-highlight p {
+    font-size: 1.875em;
+    color: #555555;
+}
+
+
+/*
+ * This grid system uses the zero-width font https://github.com/patrickkunka/zero-width
+ * to remove white space between inline blocks
+ */
+
+.grid {
+    font-family: 'zero-width';
+    font-size: 0;
+    max-width: 1140px;
+    /* change to suit */
+    margin: 0 auto;
+    /* to center grid */
+}
+
+.grid > * {
+    font-family: 'helvetica', sans-serif;
+    /* whatever font you want */
+    /* 
+     * if you are using a different base font-size then change this to be the same
+     * if you don't care about ie8 you can change this to
+     */
+    font-size: 16px;
+}
+
+.full-width,
+.one-half,
+.one-quarter,
+.two-quarters,
+.three-quarters,
+.one-third,
+.two-thirds,
+.one-fifth,
+.two-fifths,
+.three-fifths,
+.four-fifths,
+.one-twelth,
+.two-twelths,
+.three-twelths,
+.four-twelths,
+.five-twelths,
+.six-twelths,
+.seven-twelths,
+.eight-twelths,
+.nine-twelths,
+.ten-twelths,
+.eleven-twelths {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.full-width {
+    display: block;
+}
+
+.one-twelth {
+    width: 8.33333%;
+}
+
+.two-twelths {
+    width: 16.66667%;
+}
+
+.one-fifth {
+    width: 20%;
+}
+
+.one-quarter,
+.three-twelths {
+    width: 25%;
+}
+
+.one-third,
+.four-twelths {
+    width: 33.33333%;
+}
+
+.two-fifths {
+    width: 40%;
+}
+
+.five-twelths {
+    width: 41.66667%;
+}
+
+.one-half,
+.two-quarters,
+.six-twelths {
+    width: 50%;
+}
+
+.seven-twelths {
+    width: 58.33333%;
+}
+
+.three-fifths {
+    width: 60%;
+}
+
+.two-thirds,
+.eight-twelths {
+    width: 66.66667%;
+}
+
+.three-quarters,
+.nine-twelths {
+    width: 75%;
+}
+
+.four-fifths {
+    width: 80%;
+}
+
+.ten-twelths {
+    width: 83.33333%;
+}
+
+.eleven-twelths {
+    width: 91.66667%;
+}
