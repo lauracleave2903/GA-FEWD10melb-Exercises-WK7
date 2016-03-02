@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+label {
+    display: none;
+}
+
+form {
+    background: darkblue;
+    padding: 10px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: 300;
+    border: 0;
+}
+
+input[type="submit"] {
+    width: 25%;
+    padding: 10px;
+    background: blue;
+    color: white;
+    font-size: 2em;
+    border: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 2em;
+    background: #f1f1f1;
+    color: black;
+    border-bottom: 1px solid #ccc;
+    display: block;
+}
+
+li.complete {
+    text-decoration: line-through;
+    color: #ccc;
+}
